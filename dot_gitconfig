@@ -3,3 +3,5 @@
     email = marius.andre@epita.fr
 [color]
     ui = auto
+[core]
+	excludesFile = /home/boba/.gitignore

@@ -37,4 +37,6 @@ Thumbs.db
 
 # Editor files #
 ################
-.vscode 
+.vscode
+.clang-format
+.ccls*/
