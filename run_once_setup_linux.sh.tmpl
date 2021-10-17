@@ -2,7 +2,7 @@
 
 #!/bin/sh
 
-{{ if (eq .chezmoi.osRelease "ubuntu")}}
+{{ if (eq .chezmoi.osRelease.id "ubuntu" "debian")}}
 
 sudo add-apt-repository ppa:neovim-ppa/unstable
 
