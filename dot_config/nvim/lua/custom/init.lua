@@ -43,8 +43,8 @@ end)
 
 hooks.add("install_plugins", function(use)
    use {
-       "folke/which-key.nvim"
-        event = "VimEnter",
+       "folke/which-key.nvim",
+	event = "VimEnter",
     }
 end)
 
