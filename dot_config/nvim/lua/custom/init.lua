@@ -41,6 +41,14 @@ hooks.add("install_plugins", function(use)
     }
 end)
 
+hooks.add("install_plugins", function(use)
+   use {
+       "folke/which-key.nvim"
+        event = "VimEnter",
+    }
+end)
+
+-- so the path of the config here basically is in the custom/plugin_confs/whichkey.luak
 -- alternatively, put this in a sub-folder like "lua/custom/plugins/mkdir"
 -- then source it with
 
