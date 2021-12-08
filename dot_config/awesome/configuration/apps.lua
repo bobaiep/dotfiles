@@ -10,7 +10,7 @@ return {
 		-- Default web browser
 		web_browser = 'firefox',
 		-- Default text editor
-		text_editor = 'subl3',
+		text_editor = 'code',
 		-- Default file manager
 		file_manager = 'dolphin',
 		-- Default media player

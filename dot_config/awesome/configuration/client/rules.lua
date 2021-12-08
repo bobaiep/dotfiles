@@ -170,7 +170,8 @@ ruled.client.connect_signal(
 					'Geany',
 					'Atom',
 					'Subl3',
-					'code-oss'
+					'code',
+                    'Code'
 				},
 				name  = {
 					'LibreOffice',
@@ -221,9 +222,11 @@ ruled.client.connect_signal(
 			id = 'social',
 			rule_any = {
 				class = {
-					'thunderbird',
+					'Thunderbird',
 					'TelegramDesktop',
-                    'discord'
+                    'discord',
+					'Ferdi',
+					'ferdi'
                 }
 			},
 			properties = {

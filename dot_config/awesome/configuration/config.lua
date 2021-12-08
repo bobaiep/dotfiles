@@ -26,7 +26,7 @@ return {
 			-- Wired interface
 			wired_interface = 'enp0s0',
 			-- Wireless interface
-			wireless_interface = 'wlp0s20f3'
+			wireless_interface = 'wlan0'
 		},
 
 		clock = {
