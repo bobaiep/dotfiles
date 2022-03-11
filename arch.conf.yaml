@@ -47,6 +47,7 @@
     - nitrogen
     - nodejs
     - ocs-url
+    - onefetch
     - picom-git
     - polybar
     - redshift
@@ -57,7 +58,7 @@
     - tree
     - upower
     - vim
-    - xclip 
+    - xclip
     - xdg-user-dirs
     - xfce4-power-manager
     - xprop
