@@ -3,18 +3,21 @@
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 [submodule "dotbot-yay"]
-    path = dotbot-yay
-    url = https://github.com/alexwh/dotbot-yay
+	path = dotbot-yay
+	url = https://github.com/alexwh/dotbot-yay
     shallow = true
 [submodule "dotbot_plugin_aptget"]
-    path = dotbot_plugin_aptget
-    url = https://github.com/dein0s/dotbot_plugin_aptget
+	path = dotbot_plugin_aptget
+	url = https://github.com/dein0s/dotbot_plugin_aptget
     shallow = true
 [submodule "vim/vundle"]
     path = vim/bundle
     url = https://github.com/VundleVim/Vundle.vim.git
     shallow = true
 [submodule "config/nvim"]
-    path = config/nvim
-    url = https://github.com/NvChad/NvChad
+	path = config/nvim
+	url = https://github.com/NvChad/NvChad
     shallow = true
+[submodule "vim/bundle"]
+	path = vim/bundle
+	url = https://github.com/VundleVim/Vundle.vim.git
