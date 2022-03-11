@@ -1,0 +1,14 @@
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.config/awesome:
+        path: config/awesome/
+        create: true
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+
+
