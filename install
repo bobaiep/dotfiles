@@ -2,7 +2,8 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
+CONFIG="install"
+SUFFIX=".conf.yaml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
@@ -12,4 +13,30 @@ cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+echo "Select a configuration file:"
+echo "  1) Base"
+echo "  2) OS Specific"
+
+read -rp "Select [1-2]: " CONFIG_SELECT
+
+if [ "${CONFIG_SELECT}" == "1" ]; then
+    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}${SUFFIX}" "${@}"
+elif [ "${CONFIG_SELECT}" == "2" ]; then
+    source /etc/os-release
+    case $ID in
+        arch|manjaro)
+            echo "Btw I'm running on Arch Linux"
+            "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "arch${SUFFIX}" --plugin-dir "${BASEDIR}/dotbot-yay" "${@}"
+            ;;
+        debian)
+            echo "Debian"
+            sudo "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${ID}${SUFFIX}" --plugin-dir "${BASEDIR}/dotbot_plugin_aptget" "${@}"
+            ;;
+        *)
+            echo "Unknown distro ID: $ID, not doing anything special"
+            ;;
+    esac
+else
+    echo "Invalid selection"
+    exit 1
+fi

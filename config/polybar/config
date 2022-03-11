@@ -1,0 +1,154 @@
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[global/wm]
+margin-bottom = 0
+margin-top = 0
+
+include-file = ~/.config/polybar/colors
+include-file = ~/.config/polybar/modules
+include-file = ~/.config/polybar/decor
+include-file = ~/.config/polybar/system
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/main]
+monitor = DP-2
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 100%
+height = 25
+
+offset-x = 0%
+offset-y = 0%
+
+background = ${color.background}
+foreground = ${color.foreground}
+
+radius-top = 0.0
+radius-bottom = 0.0
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 6
+border-color = #AARRGGBB
+
+padding = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "MeslLGS NF Regular:size=10;3"
+font-1 = "Iosevka Nerd Font:size=14;3"
+font-2 = "Iosevka Nerd Font:size=16;4"
+font-3 = "Iosevka Nerd Font:size=18;4"
+font-4 = "Font Awesome 6 Free:size=18;4"
+font-5 = "Font Awesome 6 Brands:size=16;4"
+
+# Default
+modules-left = spacingL BLD launcher BRD dot GLD cpu SS system-nvidia-smi SS YPL memory CPL filesystem CRD dot RLD network RRD
+modules-center = LD i3 RD
+modules-right = RLD network-publicip KGB network-traffic RRD dot GLD volume spotify GRD dot YLD updates-pacman BPY powermenu time BRR spacing:
+
+spacing = 0
+dim-value = 1.0
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 14
+tray-background = ${color.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+
+enable-ipc = true
+
+cursor-click =
+cursor-scroll =
+
+[bar/main2]
+monitor = DP-0
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 100%
+height = 25
+
+offset-x = 0%
+offset-y = 0%
+
+background = ${color.background}
+foreground = ${color.foreground}
+
+radius-top = 0.0
+radius-bottom = 0.0
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 6
+border-color = #AARRGGBB
+
+padding = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "MeslLGS NF Regular:size=10;3"
+font-1 = "Iosevka Nerd Font:size=14;3"
+font-2 = "Iosevka Nerd Font:size=16;4"
+font-3 = "Iosevka Nerd Font:size=18;4"
+font-4 = "Font Awesome 6 Free:size=18;4"
+font-5 = "Font Awesome 6 Brands:size=16;4"
+
+# Default
+modules-left = spacingL BLD launcher BRD dot
+modules-center = LD i3 RD
+modules-right =  dot GLD volume spotify GRD dot YLD updates-pacman BPY powermenu time BRR
+
+spacing = 0
+dim-value = 1.0
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 14
+tray-background = ${color.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+
+enable-ipc = true
+
+cursor-click =
+cursor-scroll =
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+
+screenchange-reload = false
+
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+
+pseudo-transparency = true
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

@@ -1,0 +1,67 @@
+- shell:
+    - [sudo sed -i '/Color$/s/^#//g' /etc/pacman.conf, Enabling color in pacman]
+    - [sudo sed -i '/TotalDownload$/s/^#//g' /etc/pacman.conf, Enabling total download in pacman]
+    - [sudo sed -i '/CheckSpace$/s/^#//g' /etc/pacman.conf, Enabling check space in pacman]
+
+- yay:
+    - acpi
+    - acpid
+    - acpi_call
+    - arandr
+    - ark
+    - awesome-git
+    - bat
+    - bison
+    - bitwarden
+    - blueman
+    - btop
+    - dash
+    - discord
+    - dolphin
+    - dunst
+    - evince
+    - feh
+    - firefox
+    - ffmpeg
+    - flex
+    - fontmanager
+    - fzf
+    - gdb
+    - git-delta
+    - gtest
+    - i3-gaps
+    - i3-scrot
+    - imagemagick
+    - inter-font
+    - iproute2
+    - iw
+    - kitty
+    - lightdm-webkit2-greeter
+    - lightdm-webkit2-theme-glorious
+    - light-git
+    - lua53
+    - maim
+    - neofetch
+    - neovim
+    - nerd-fonts-complete
+    - nitrogen
+    - nodejs
+    - ocs-url
+    - picom-git
+    - polybar
+    - redshift
+    - ripgrep
+    - rofi
+    - speedtest-cli
+    - thunderbird
+    - tree
+    - upower
+    - vim
+    - xclip 
+    - xdg-user-dirs
+    - xfce4-power-manager
+    - xprop
+    - zsh
+
+- shell:
+    - [chsh -s $(which zsh), Making zsh the default shell]

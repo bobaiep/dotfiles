@@ -1,0 +1,2 @@
+alias sheesh='g++ -Wall -Werror -Wextra -std=c++20 -pedantic -g -fsanitize=address'
+alias clang-format-all='find . \( -name "*.[ch]" -o -name "*.cc" -o -name "*.cpp" -o -name "*.hh" -o -name "*.hpp" -o -name "*.hxx" \) -print -exec clang-format -i {} \;'

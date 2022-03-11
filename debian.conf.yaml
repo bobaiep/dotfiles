@@ -1,0 +1,16 @@
+- aptget:
+    bat
+    build-essential
+    firefox
+    gdb
+    neovim:
+        ppa_source: ppa:neovim-ppa/unstable
+        upgrade: true
+    nodejs
+    python-dev
+    python-pip
+    python3-pip
+    python3-dev
+    ripgrep
+    tree
+    zsh

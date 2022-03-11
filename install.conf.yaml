@@ -1,14 +1,67 @@
+- defaults:
+    link:
+      relink: true
+
 - clean: ['~']
 
 - link:
+    # GDB dashboard
+    ~/.gdbinit: gdbinit
+    ~/.gdbinit.d:
+        path: gdbinit.d/
+        create: true
+
+    # Git Stuff
     ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
+
     ~/.vimrc: vimrc
+    ~/.vim: vim/
+
+
     ~/.zshrc: zshrc
+    ~/.zsh:
+        path: zsh/
+        create: true
+    ~/.zprofile: zprofile
+
+    ~/bin:
+        path: bin/
+        create: true
+
+    # Configs
     ~/.config/awesome:
         path: config/awesome/
         create: true
     ~/.config/i3:
         path: config/i3/
         create: true
+    ~/.config/kitty:
+        path: config/kitty/
+        create: true
+    ~/.config/nvim: config/nvim/
+    ~/.config/picom:
+        path: config/picom/
+        create: true
+    ~/.config/polybar:
+        path: config/polybar/
+        create: true
+    ~/.config/rofi:
+        path: config/rofi/
+        create: true
 
-
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - 
+        command: ssh-keygen -a 100 -t ed25519 -b 3072
+        stdin: true
+        stdout: true
+        description: Generating ssh keys
+    -
+        command: cat ~/.ssh/id_ed25519.pub
+        stdout: true
+        description: SSH public key
+    - 
+        command: ssh-add ~/.ssh/id_ed25519
+        stdout: true
+        description: Adding SSH key to agent
