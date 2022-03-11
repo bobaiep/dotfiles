@@ -24,6 +24,7 @@
         path: zsh/
         create: true
     ~/.zprofile: zprofile
+    ~/.p10k.zsh: zsh/p10k.zsh
 
     ~/bin:
         path: bin/
