@@ -15,7 +15,7 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 
 echo "Select a configuration file:"
 echo "  1) Base"
-echo "  2) OS Specific"
+echo "  2) OS Specific Packages"
 
 read -rp "Select [1-2]: " CONFIG_SELECT
 
