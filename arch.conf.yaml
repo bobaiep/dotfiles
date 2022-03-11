@@ -24,7 +24,7 @@
     - firefox
     - ffmpeg
     - flex
-    - fontmanager
+    - font-manager
     - fzf
     - gdb
     - git-delta
@@ -64,4 +64,4 @@
     - zsh
 
 - shell:
-    - [chsh -s $(which zsh), Making zsh the default shell]
+    - [sudo chsh -s $(which zsh), Making zsh the default shell]
