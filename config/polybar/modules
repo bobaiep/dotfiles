@@ -8,7 +8,7 @@ type = internal/xbacklight
 card = intel_backlight
 
 format = <ramp> <label>
-format-background = ${color.yellow}
+format-background = ${color.red}
 
 label = %percentage%%
 label-foreground = ${color.background}
@@ -36,7 +36,7 @@ card = ${system.graphics_card}
 enable-scroll = true
 
 format = <ramp> <label>
-format-background = ${color.yellow}
+format-background = ${color.red}
 format-padding = 1
 
 label = %percentage%%
@@ -122,15 +122,15 @@ format-full = <label-full>
 format-full-prefix = " "
 format-full-prefix-font = 2
 format-full-prefix-foreground = ${color.background}
-format-full-prefix-background = ${color.red}
+format-full-prefix-background = ${color.green}
 
 label-charging = %percentage%%
 label-discharging = %percentage%%
 label-full = %percentage%%
 
-label-charging-background = ${color.red}
-label-discharging-background = ${color.red}
-label-full-background = ${color.red}
+label-charging-background = ${color.green}
+label-discharging-background = ${color.green}
+label-full-background = ${color.green}
 
 label-charging-foreground = ${color.background}
 label-discharging-foreground = ${color.background}
@@ -143,7 +143,7 @@ ramp-capacity-3 = " "
 ramp-capacity-4 = " "
 ramp-capacity-font = 2
 ramp-capacity-foreground = ${color.background}
-ramp-capacity-background = ${color.red}
+ramp-capacity-background = ${color.green}
 
 animation-charging-0 = " "
 animation-charging-1 = " "
@@ -152,7 +152,7 @@ animation-charging-3 = " "
 animation-charging-4 = " "
 animation-charging-font = 2
 animation-charging-foreground = ${color.background}
-animation-charging-background = ${color.red}
+animation-charging-background = ${color.green}
 animation-charging-framerate = 750
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -384,11 +384,11 @@ label-foreground = ${color.background}
 label-background = ${color.red}
 
 [module/network-traffic]
-type = custom/script
-exec = ~/.config/polybar/scripts/network-traffic.sh
-tail = true
-label-foreground = ${color.background}
-label-background = ${color.red}
+type = internal/network
+interface = ${system.network_interface}
+label-connected = "↗ %upspeed:7% | ↘ %downspeed:7%"
+label-connected-foreground = ${color.background}
+label-connected-background = ${color.red}
 
 [module/spotify]
 type = custom/script

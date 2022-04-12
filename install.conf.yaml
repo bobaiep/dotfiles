@@ -1,6 +1,7 @@
 - defaults:
     link:
       relink: true
+      force: true
 
 - clean: ['~']
 
@@ -67,3 +68,8 @@
         command: ssh-add ~/.ssh/id_ed25519
         stdout: true
         description: Adding SSH key to agent
+
+    -   
+        command: echo "Edit network card config in .config/polybar/system"
+        stdout: true
+        description: Network card config
