@@ -4,7 +4,7 @@
 [color]
     ui = auto
 [core]
-    excludesFile = /home/boba/.gitignore
+    excludesFile = ~/.gitignore
     pager = delta
 [interactive]
     diffFilter = delta --color-only
