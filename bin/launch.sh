@@ -7,7 +7,7 @@ killall -q polybar
 
 echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
 
-if hostname -s | grep -q "boba-xps13"; then
+if hostname -s | grep -q "xps13-arch"; then
     # Launch bar1 and bar2
     polybar -c ~/.config/polybar/config main-laptop -r >>/tmp/polybar1.log 2>&1 & disown
 else
