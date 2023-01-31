@@ -29,7 +29,7 @@
     - flameshot
     - flex
     - fluent-gtk-theme
-    - fluent-kde-theme
+    - fluent-kde-theme-git
     - font-manager
     - fzf
     - gdb
@@ -48,7 +48,7 @@
     - lua53
     - lxappearance-gtk3
     - maim
-    - mcmojave-circle-icon-theme
+    - mcmojave-circle-icon-theme-git
     - neofetch
     - neovim
     - nerd-fonts-complete

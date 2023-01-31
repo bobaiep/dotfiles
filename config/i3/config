@@ -30,7 +30,7 @@ exec --no-startup-id xrandr --output HDMI-0 --off --output DP-0 --mode 1920x1080
 
 exec_always --no-startup-id picom -b --experimental-backends --config ~/.config/picom/picom.conf
 
-exec --no-startup-id bash ~/bin/launch.sh
+exec --no-startup-id bash ~/.local/bin/launch-polybar
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # exec --no-startup-id nitrogen --restore
