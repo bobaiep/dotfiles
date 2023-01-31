@@ -16,6 +16,7 @@
     - bitwarden
     - blueman
     - btop
+    - capitaine-cursors
     - dash
     - dex
     - discord
@@ -25,7 +26,10 @@
     - feh
     - firefox
     - ffmpeg
+    - flameshot
     - flex
+    - fluent-gtk-theme
+    - fluent-kde-theme
     - font-manager
     - fzf
     - gdb
@@ -42,7 +46,9 @@
     - lightdm-webkit2-theme-glorious
     - light-git
     - lua53
+    - lxappearance-gtk3
     - maim
+    - mcmojave-circle-icon-theme
     - neofetch
     - neovim
     - nerd-fonts-complete
@@ -55,9 +61,11 @@
     - redshift
     - ripgrep
     - rofi
+    - sassc
     - speedtest-cli
     - thunderbird
     - tree
+    - ttf-font-awesome
     - upower
     - variety
     - vim
@@ -68,4 +76,4 @@
     - zsh
 
 - shell:
-    - [sudo chsh -s $(which zsh), Making zsh the default shell]
+    - [sudo chsh -s $(which zsh) $(whoami), Making zsh the default shell]

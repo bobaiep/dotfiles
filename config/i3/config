@@ -66,6 +66,10 @@ bindsym $mod+d exec "rofi -show drun -theme ~/.config/rofi/appmenu/rofi.rasi"
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+bindsym $mod+p --release exec "~/.local/bin/vmscreen"
+bindsym $mod+Shift+p --release exec "~/.local/bin/vmscreen new"
+bindsym Print --release exec "flameshot gui"
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down

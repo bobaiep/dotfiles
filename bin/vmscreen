@@ -1,0 +1,17 @@
+#!/bin/bash
+
+function flameshot_save_result() {
+    val=$(flameshot gui -g)
+    echo $val | grep aborted || echo $val > /tmp/flameshot_vmscreen
+}
+
+[ $# -eq 0 ] && [ -e /tmp/flameshot_vmscreen ] && VMSCREEN_CONFIG=$(cat /tmp/flameshot_vmscreen)
+
+flameshot_save_result &
+if [ ! -z "$VMSCREEN_CONFIG" ] && [ "$VMSCREEN_CONFIG" != "screenshot aborted" ] ; then
+    sleep 0.1
+    xdotool mousemove --screen 0 $(cut -d' ' -f 3,4 <<< $VMSCREEN_CONFIG)
+    xdotool mousedown 1
+    xdotool mousemove_relative $(( $(cut -d' ' -f 1 <<< $VMSCREEN_CONFIG) - 1)) $(( $(cut -d' ' -f 2 <<< $VMSCREEN_CONFIG) - 1))
+    xdotool mouseup 1
+fi
