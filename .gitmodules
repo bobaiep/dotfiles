@@ -14,10 +14,6 @@
     path = vim/bundle
     url = https://github.com/VundleVim/Vundle.vim.git
     shallow = true
-[submodule "config/nvim"]
-	path = config/nvim
-	url = https://github.com/NvChad/NvChad
-    shallow = true
 [submodule "vim/bundle"]
 	path = vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
