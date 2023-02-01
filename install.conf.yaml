@@ -39,6 +39,9 @@
     ~/.config/i3:
         path: config/i3/
         create: true
+    ~/.config/dunst:
+        path: config/dunst/
+        create: true
     ~/.config/kitty:
         path: config/kitty/
         create: true

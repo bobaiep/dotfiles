@@ -13,7 +13,6 @@ antigen use oh-my-zsh
 
 antigen bundle git
 antigen bundle colored-man-pages
-antigen bundle ssh-agent
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
