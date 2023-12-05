@@ -1,5 +1,5 @@
 [user]
-	name = Marius ANDRE
+    name = Marius ANDRE
     email = marius.andre@epita.fr
 [color]
     ui = auto
@@ -13,6 +13,5 @@
     line-numbers = true
 [merge]
     conflictstyle = diff3
-
 [diff]
     colorMoved = default
